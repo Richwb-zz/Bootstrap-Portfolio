@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Richard Bates' Bio</title>
 		
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
 		
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -13,28 +13,28 @@
 		
 	</head>
 	<body>
-  	<header>
-  		<div class="headerContent">
+  	<header class="container-fluid">
+  		<!-- <div class="headerContent"> -->
 				
-				<div class="name">Richard Bates</div>
+				<div class="col-md-6">Richard Bates</div>
 				
 				<!--menu-->
-				<nav>
+				<nav class="col-md-6">
 					<a href="index.html">About</a>
 				  <a href="portfolio.html">Portfolio</a>
 				  <a href="contact.html">Contact</a>
 			  </nav>
-  		</div>
+  		<!-- </div> -->
   	</header>
   	<!--main content-->
-  	<main>
-	  	<article>
+  	<main class="container-fluid">
+	  	<article class="col-md-8">
 			
 				<h1>About Me</h1>
 
 				<hr>
 		
-				<img id="profile-pic" src="assets/images/bio-pic.jpg" alt="Me driving a dune buggy in Cozumel">
+				<img class="img-responsive" src="assets/images/bio-pic.jpg" alt="Me driving a dune buggy in Cozumel">
 
 				<!--section about my coding history-->
 				<section>
@@ -54,17 +54,27 @@
 			</article>
 	
 			<!--site links in an aside-->
-			<aside>
+			<aside class="col-md-4" role="complimentary">
 		 		<h2>Connect With Me</h2>
+		 		
 		 		<hr>
-		 			<a href="https://stackoverflow.com/users/8359487/rwbates"><img src="assets/images/stack-overflow.png" alt="stack-overflow icon"></a>
-					<a href="https://www.linkedin.com/in/richard-bates-383473b2"><img src="assets/images/linkedin.png" alt="Linked incon"></a>
-					<a href="https://github.com/Richwb"><img src="assets/images/github.png" alt="gitgub icon"></a>
+		 			
+		 			<a href="https://stackoverflow.com/users/8359487/rwbates">
+		 				<img style="height:50px;" src="assets/images/stack-overflow.png" alt="stack-overflow icon">
+		 			</a>
+					
+					<a href="https://www.linkedin.com/in/richard-bates-383473b2">
+						<img style="height:50px;" src="assets/images/linkedin.png" alt="Linked incon">
+					</a>
+					
+					<a href="https://github.com/Richwb">
+						<img style="height:50px;" src="assets/images/github.png" alt="gitgub icon">
+					</a>
 			</aside>
 		</main>
 		
 		<!--Website footer-->
-		<footer>&#9400;Copyright 2017 Richard Bates</footer>
+		<footer class="container-fluid text-center">&#9400;Copyright 2017 Richard Bates</footer>
 
 	</body>
 </html>
