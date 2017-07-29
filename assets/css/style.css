@@ -5,31 +5,46 @@
 
 	body {
 		font-family: "Arial","Helvetica Neue","Helvetica","sans-serif";
-		background-color: #dddddd;
-		padding: 0px;
-		margin: 0 auto;
 		color: #777777;
-		height: 100%;
-		display: flex;
-	  flex-direction: column;
+	}
+
+	main{
+		background-color: #dddddd;
 	}
 
 	header{
 		background-color: #ffffff;
 	}
 
+	.name{
+		font-size: 40px;
+		background-color: #4aaaa5;
+	}
+
+	nav{
+		line-height: 57px;
+	}
+
 	nav a{
+		float: left;
 		color: #777777;
 		border-right: solid #777777 1px;
+		font-size: 20px;
+		padding: 0px 10px;
 	}
 
 	nav a:hover{
 		background-color: #777777;
 		color: #ffffff;
+		text-decoration: none;
 	}
 
 	nav a:last-of-type{
 		border-right: none;
+	}
+
+	.row-margin{
+		margin-top: 50px;
 	}
 
 	article{
@@ -49,6 +64,7 @@
 	aside{
 		background-color: #ffffff;
 		border: solid 1px #888;
+		text-align: center;
 	}	
 
 	footer{
@@ -57,7 +73,15 @@
 		border-top: solid 10px #4aaaa5;
 	}
 
-	/* Contact Page */
+	
+	/*-------------------- About Page --------------------*/
+
+	/*.profile-pic{
+		max-height: 300px;
+		max-width: 300px;
+	}*/
+
+	/*--------------------  Contact Page -------------------- */
 
 	fieldset{
 		border:0;
@@ -86,7 +110,7 @@
 		cursor: pointer;
 	}
 
-/* Portfolio Page */
+/*--------------------  Portfolio Page -------------------- */
 
 	figure{
 		float: left;
