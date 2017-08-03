@@ -1,95 +1,129 @@
 <!DOCTYPE html>
-<html>
-		<head>
+<html lang="en">
+	<head>
+		<title>My Bio</title>
 		<meta charset="utf-8">
-		<title>Richard Bates' Bio</title>
-		
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		
+
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		
+
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 	<body>
-  	<header class="container-fluid">
-  		<div class="row">
-				
-				<div class="col-md-6 col-sm-6 col-xs-12">Richard Bates</div>
-				
-				<!--menu-->
-				<nav class="col-md-6 col-sm-6 col-xs-12">
-					<a href="index.html">About</a>
-				  <a href="portfolio.html">Portfolio</a>
-				  <a href="contact.html">Contact</a>
-			  </nav>
-  		</div>
-  	</header>
-  	<!--main content-->
-  	<main class="container-fluid">
-	  	<div class="row">
-		  	<article class="col-md-8 col-sm-12 col-xs-12">
-						
-						<h1>Contact Me</h1>
 
-						<hr>
-
-						<!--form section with required attribute setting-->
-						<form class="contact">
-							<fieldset>
-								
-								<label>
-									Name:
-									<br>
-									<input type="text" name="contactName" required>
-								</label>
-								<br >
-								
-								<label> 
-									Email:
-									<br>
-									<input type="email" name="contactEmail" required>
-								</label>
-								<br >
-								
-								<label>
-									Message
-									<br>
-									<textarea required name="contactMessage"></textarea>
-								</label>
-								<br >
-
-								<input type="submit" name="contact-submit" Value="Submit">
-							</fieldset>
-						</form>
-
-					</article>
-
-					<aside class="col-md-4 col-sm-12 col-xs-12" role="complimentary">
-				 		<h2>Connect With Me</h2>
-				 		
-				 		<hr>
-				 			
-				 			<a href="https://stackoverflow.com/users/8359487/rwbates">
-				 				<img style="height:50px;" src="assets/images/stack-overflow.png" alt="stack-overflow icon">
-				 			</a>
-							
-							<a href="https://www.linkedin.com/in/richard-bates-383473b2">
-								<img style="height:50px;" src="assets/images/linkedin.png" alt="Linked incon">
-							</a>
-							
-							<a href="https://github.com/Richwb">
-								<img style="height:50px;" src="assets/images/github.png" alt="gitgub icon">
-							</a>
-					</aside>
+		<!-- header bar -->
+		<header class="navbar navbar-static-top">
+			<div class="container">
+				<div class="navbar-brand name">
+					Richard Bates
 				</div>
-			</main>
 
-			<!--Website footer-->
-					<footer class="container-fluid text-center">
-			<div class="row">
-				&#9400;Copyright 2017 Richard Bates
+				<!-- Nav for all screen except xs -->
+				<nav>
+					<div class="collapse navbar-collapse text-center">
+						
+							<ul class="nav navbar-nav navbar-right text-center">
+								<li><a href="index.html">About</a></li>
+								<li><a href="portfolio.html">Portfolio</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+					</div>
+					
+					<!-- Nav for xs screens -->
+					<div class="row hidden-sm hidden-md hidden-lg text-center">
+						<div class="col-xs-4">
+							<a href="index.html">About</a>
+						</div>
+						<div class="col-xs-4">
+							<a href="portfolio.html">Portfolio</a>
+						</div>
+						<div class="col-xs-4">
+							<a href="contact.html">Contact</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+  	<!--main content-->
+  	<div class="container">
+			
+			<!-- Main Page conent -->
+			<div class="row">	
+				<div class="col-md-7 col-sm-12">
+					
+					<div class="row">
+						<div class="col-md-12 col-md-12">
+							<h1>About Me</h1>
+							<hr>
+						</div>
+					</div>
+
+					<!--form section with required attribute setting-->
+					<form class="contact">
+						<fieldset class="form-group">	
+							<label for="contactName" class="col-form-label">
+								Name:
+							</label>
+							<br>
+							<input class="form-control" type="text" id="contactName" required>
+
+							<br >
+							
+							<label for="contactEmail" class="col-form-label">
+								Email:
+							</label>
+								<br>
+								<input class="form-control" type="email" id="contactEmail" required>
+							
+							<br >
+							
+							<label for="contactMessage" class="col-form-label">
+								Message
+							</label>
+								<br>
+								<textarea class="form-control" required id="contactMessage"></textarea>
+							
+							<br >
+
+							<input class="btn btn-primary" type="submit" name="contact-submit" Value="Submit">
+						</fieldset>
+					</form>
+				</div>
+
+
+				<!-- Connect With Me Aside -->
+				<div class="col-lg-offset-1 col-lg-3 col-md-offset-1 col-md-4 col-sm-12 connect">
+					
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="">Connect With Me</h2>
+							<hr>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-4 col-xs-1">
+							<a href=""><img class="connect-img" src="assets/images/github.png"></a>			
+						</div>
+						<div class="col-md-4 col-xs-1">
+							<a href=""><img class="connect-img" src="assets/images/linkedin.png"></a>			
+						</div>
+						<div class="col-md-4 col-xs-1">
+							<a href=""><img class="connect-img" src="assets/images/stack-overflow.png"></a>			
+						</div>
+					</div>	
+				
+				</div>
+			</div>
+		</div>
+	
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container text-center">
+				<p>&#169;2017 Richard Bates</p>
 			</div>
 		</footer>
 	</body>
