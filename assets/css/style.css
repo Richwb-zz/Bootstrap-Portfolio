@@ -6,6 +6,10 @@ body{
 	color: #777777;
 }
 
+main{
+	margin-bottom: 52px;
+}
+
 h1,h2{
 	font-family: "Georiga", "Times", "Times New Roman","serif";
 	color: #4aaaa5;
@@ -31,7 +35,7 @@ h1,h2{
 
 footer{
 	display: block;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 	height: 51px;
